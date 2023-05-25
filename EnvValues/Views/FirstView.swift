@@ -10,10 +10,13 @@
 // Buy me a ko-fi:  https://ko-fi.com/StewartLynch
 
 
+// Link: https://www.youtube.com/watch?v=rl7xj5usTzk&ab_channel=StewartLynch
+
 import SwiftUI
 
 struct FirstView: View {
     @EnvironmentObject var appStoreService: AppStoreService
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         NavigationStack {
             VStack {
@@ -39,7 +42,7 @@ struct FirstView: View {
                 }
             }
         }
-        .tint(.red)
+        .tint(colorScheme == .dark ? .green : .red)
     }
 }
 

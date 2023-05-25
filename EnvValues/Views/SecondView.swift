@@ -20,6 +20,7 @@ struct SecondView: View {
                 Text("Second View Group box")
                 
             }
+            .environment(\.colorScheme, .dark)
         }
         .withBackground(color: .red)
         .navigationTitle("Second View")
