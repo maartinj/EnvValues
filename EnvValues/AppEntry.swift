@@ -27,6 +27,7 @@ struct AppEntry: App {
                 }
             }
             .environmentObject(appStoreService)
+            .appTheme(AppPurchaseTheme.theme(for: appStoreService.receipt))
         }
     }
 }

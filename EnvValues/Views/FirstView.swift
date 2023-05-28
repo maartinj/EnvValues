@@ -17,18 +17,19 @@ import SwiftUI
 struct FirstView: View {
     @EnvironmentObject var appStoreService: AppStoreService
 //    @Environment(\.colorScheme) var colorScheme
-    @Environment(\.appColor) var appColor
+//    @Environment(\.appColor) var appColor
+    @Environment(\.appTheme) var appTheme
     var body: some View {
         NavigationStack {
             VStack {
                 Text("Welcome")
                     .font(.title)
-                Text("Your Current Level is \(appStoreService.receipt.rawValue)")
+                Text("Your Current Level is \(appTheme.name)")
                 NavigationLink("Go Next View", value: true)
                     .buttonStyle(.borderedProminent)
                 Spacer()
             }
-            .withBackground(color: .red)
+            .withBackground(color: appTheme.secondary)
             .navigationDestination(for: Bool.self, destination: { _ in
                 SecondView()
             })
@@ -44,7 +45,7 @@ struct FirstView: View {
             }
         }
 //        .tint(.red)
-        .tint(appColor)
+        .tint(appTheme.primary)
     }
 }
 

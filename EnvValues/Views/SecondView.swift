@@ -13,6 +13,7 @@
 import SwiftUI
 
 struct SecondView: View {
+    @Environment(\.appTheme) var appTheme
     var body: some View {
         VStack {
             Text("Just another view")
@@ -22,7 +23,7 @@ struct SecondView: View {
             }
             .environment(\.colorScheme, .dark)
         }
-        .withBackground(color: .red)
+        .withBackground(color: appTheme.secondary)
         .navigationTitle("Second View")
         .navigationBarTitleDisplayMode(.inline)
     }

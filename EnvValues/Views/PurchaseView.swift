@@ -14,6 +14,7 @@ import SwiftUI
 
 struct PurchaseView: View {
     @EnvironmentObject var appStoreService: AppStoreService
+    @Environment(\.appTheme) var appTheme
     @State private var purchaseInProgress = false
     var body: some View {
         NavigationStack {
@@ -56,9 +57,9 @@ struct PurchaseView: View {
                 Spacer()
                     .navigationTitle("Make Purchase")
             }
-            .withBackground(color: .red)
+            .withBackground(color: appTheme.secondary)
         }
-        .tint(.red)
+        .tint(appTheme.primary)
     }
     
     func makePurchase(_ receipt: Receipt?) {
