@@ -16,7 +16,8 @@ import SwiftUI
 
 struct FirstView: View {
     @EnvironmentObject var appStoreService: AppStoreService
-    @Environment(\.colorScheme) var colorScheme
+//    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.appColor) var appColor
     var body: some View {
         NavigationStack {
             VStack {
@@ -42,7 +43,8 @@ struct FirstView: View {
                 }
             }
         }
-        .tint(colorScheme == .dark ? .green : .red)
+//        .tint(.red)
+        .tint(appColor)
     }
 }
 

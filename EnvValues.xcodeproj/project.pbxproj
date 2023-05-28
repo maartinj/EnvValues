@@ -16,6 +16,7 @@
 		BB28B5412964B964000C60E9 /* AppStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB28B5402964B964000C60E9 /* AppStoreService.swift */; };
 		BB28B5432964C620000C60E9 /* BackgroundViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB28B5422964C620000C60E9 /* BackgroundViewModifier.swift */; };
 		BBC9B313295F55AC0036C091 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC9B312295F55AC0036C091 /* Launch Screen.storyboard */; };
+		E47CEA5A2A1FC541006AECBA /* AppColorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47CEA592A1FC541006AECBA /* AppColorKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BB28B5402964B964000C60E9 /* AppStoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreService.swift; sourceTree = "<group>"; };
 		BB28B5422964C620000C60E9 /* BackgroundViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewModifier.swift; sourceTree = "<group>"; };
 		BBC9B312295F55AC0036C091 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E47CEA592A1FC541006AECBA /* AppColorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				BB173A54295F51AD00ACEAB7 /* AppEntry.swift */,
+				E47CEA582A1FC52C006AECBA /* Environment Keys */,
 				BB138B9A2964F6340093BE5A /* Views */,
 				BB28B5402964B964000C60E9 /* AppStoreService.swift */,
 				BB28B5422964C620000C60E9 /* BackgroundViewModifier.swift */,
@@ -98,6 +101,14 @@
 				BB173A66295F54ED00ACEAB7 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E47CEA582A1FC52C006AECBA /* Environment Keys */ = {
+			isa = PBXGroup;
+			children = (
+				E47CEA592A1FC541006AECBA /* AppColorKey.swift */,
+			);
+			path = "Environment Keys";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			files = (
 				BB173A63295F531900ACEAB7 /* SecondView.swift in Sources */,
 				BB173A57295F51AD00ACEAB7 /* FirstView.swift in Sources */,
+				E47CEA5A2A1FC541006AECBA /* AppColorKey.swift in Sources */,
 				BB173A55295F51AD00ACEAB7 /* AppEntry.swift in Sources */,
 				BB173A65295F533A00ACEAB7 /* PurchaseView.swift in Sources */,
 				BB28B5412964B964000C60E9 /* AppStoreService.swift in Sources */,

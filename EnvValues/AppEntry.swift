@@ -22,6 +22,8 @@ struct AppEntry: App {
                     PurchaseView()
                 } else {
                     FirstView()
+//                        .environment(\.appColor, .green)
+//                        .appColor(.green)
                 }
             }
             .environmentObject(appStoreService)
